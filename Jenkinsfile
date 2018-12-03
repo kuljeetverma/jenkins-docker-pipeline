@@ -1,10 +1,6 @@
 pipeline 
 {
 
-	environment {
-		    registry = “mydockyard/devopslabs”
-		    registryCredential = ‘dockerhub’
-		  }
   agent any
 	  
 
