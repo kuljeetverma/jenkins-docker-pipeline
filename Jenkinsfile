@@ -51,7 +51,7 @@ pipeline
                                             def uploadSpec = """{
                                                                    "files": [
       					                               {
-                                                                           "pattern": "target/*.jar",
+                                                                           "pattern": "target/*.war",
                                                                            "target": "generic-local/com/nagarro/jenkins/kuljeetverma/"
                                                                          }
                                                                             ]
