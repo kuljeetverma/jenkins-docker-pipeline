@@ -1,5 +1,10 @@
 pipeline 
 {
+
+	environment {
+		    registry = “mydockyard/devopslabs”
+		    registryCredential = ‘dockerhub’
+		  }
   agent any
 	  
 
@@ -67,8 +72,10 @@ pipeline
 					{
 
 						steps	{
-
+	
+							  
 							  sh "docker build -t jenkins_kuljeetverma_app ."
+							  sh "docker login -u mydockyard -p kuljeet@123"
 
 							  sh "docker tag jenkins_kuljeetverma_app mydockyard/devopslabs:first"
 
