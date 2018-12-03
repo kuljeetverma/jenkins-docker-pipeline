@@ -70,9 +70,9 @@ pipeline
 
 							  sh "docker build -t jenkins_kuljeetverma_app ."
 
-							  sh "docker tag jenkins_kuljeetverma_app localhost:5000/jenkins_kuljeetverma_app"
+							  sh "docker tag jenkins_kuljeetverma_app mydockyard/devopslabs:first"
 
-							  sh "docker push localhost:5000/jenkins_kuljeetverma_app"
+							  sh "docker push mydockyard/devopslabs:first"
 
 							}
 					}
